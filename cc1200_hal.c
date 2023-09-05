@@ -61,7 +61,7 @@ extern uint8_t fs_chp_cal[28], fs_vco2_cal[28], fs_vco4_cal[28];
 extern uint8_t cc1200_user_config_4_8(uint8_t slot);
 extern uint8_t cc1200_user_config_38_4(uint8_t slot);
 extern uint8_t cc1200_user_config_150(uint8_t slot);
-extern uint8_t cc1200_user_config_50(uint8_t slot)
+extern uint8_t cc1200_user_config_50(uint8_t slot);
 extern uint8_t cc1200_user_config_50_4gfsk(uint8_t slot);
 extern uint8_t cc1200_user_config_100(uint8_t slot);
 extern uint8_t cc1200_user_config_500(uint8_t slot);
