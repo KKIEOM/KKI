@@ -1,31 +1,4 @@
-/*
- * NanoQplus3, Operating System for small IoT embedded devices.
- * Copyright (C) 2017  Electronics and Telecommunications Research Institute (ETRI)
- *
- *     This file is part of NanoQplus3.
- *
- *     NanoQplus3 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU Lesser General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     NanoQplus3 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU Lesser General Public License for more details.
- *
- *     You should have received a copy of the GNU Lesser General Public License
- *     along with NanoQplus3.  If not, see <http://www.gnu.org/licenses/>.
- */
 
-/**
- * @file cc1200_hal.c
- *
- * CC1200 Hardware Abstraction Layer for "WPAN_DEV_M"
- *
- * @author Haeyong Kim (ETRI)
- * @date 2014. 7. 17.
- */
 
 #include <string.h>
 
