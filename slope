@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+// 선형 함수 모델: y = mx + b
+double linear(double x, double m, double b) {
+    return m * x + b;
+}
+
+int main() {
+    double x[] = {1.0, 2.0, 3.0, 4.0, 5.0}; // x 값
+    double y[] = {2.0, 4.0, 6.0, 8.0, 10.0}; // y 값
+    int n = sizeof(x) / sizeof(x[0]);
+
+    // 선형 함수 파라미터 추정
+    double sum_x = 0.0, sum_y = 0.0, sum_xy = 0.0, sum_x2 = 0.0;
+    for (int i = 0; i < n; ++i) {
+        sum_x += x[i];
+        sum_y += y[i];
+        sum_xy += x[i] * y[i];
+        sum_x2 += x[i] * x[i];
+    }
+    double m = (n * sum_xy - sum_x * sum_y) / (n * sum_x2 - sum_x * sum_x);
+    double b = (sum_y - m * sum_x) / n;
+
+    printf("y = %.2f * x + %.2f\n", m, b);
+
+    return 0;
+}
